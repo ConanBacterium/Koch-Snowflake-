@@ -1,6 +1,6 @@
 from tkinter import Tk, Canvas, Frame, BOTH
-import KochSnowflake
-import newKochSnowflake
+import customKochSnowflake as KochSnowflake
+import recursiveKochSnowflake as newKochSnowflake 
 
 class Example(Frame):
     def __init__(self):
