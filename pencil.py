@@ -30,8 +30,8 @@ class Example(Frame):
         self.pack(fill=BOTH, expand=1)
 
         ##### The below commands each draw a Koch Snowflake
-        #self.execRecursiveKochSnowflake(400, 6) # works on all iterations. First argument is length of the original triangle edges, second argument is number of iterations
-        #self.execCustomKochSnowflake(3) # Only works on the first three iterations, although the higher iterations are still pretty. Argument is number of iterations.
+        #self.execRecursiveKochSnowflake(400, 6) # works on all iterations. First argument is length of the original triangle edges, second argument is number of iterations (starts at 0).
+        #self.execCustomKochSnowflake(3) # Only works on the first three iterations, although the higher iterations are still pretty. Argument is number of iterations (starts at 1).
 
     def connect_Vertices(self, vertices):
         canvas = Canvas(self)
