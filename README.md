@@ -8,7 +8,7 @@ I started out only looking at [this picture from Wikipedia](https://en.wikipedia
 
 This however only works if the edge is in parallel with the x-axis. To get around this issue a change of basis is applied to v1 and v2, then the coordinates to the triangle on the edge between v1 and v2 are calculated, and then the basis of all the coordinates is changed back to the normal basis. Thus the first basisvector will be parallel with the edge and the second basisvector will be perpendicular to the edge - in effect the edge can be treated as if it was parallel with the x-axis, meaning that the function genTriCoordsFromEdge() will return the correct coordinates. 
 
-The edges are recognized from a global list of vertices called vertices[]. It's important that the vertices are in sequence, as the program expects there to be an edge between each element of the list, including the first and last element. That is what sortVertices() is for. 
+The edges are recognized from a global list of vertices called vertices. It's important that the vertices are in sequence, as the program expects there to be an edge between each consecutive element of the list, including the first and last element. That is what sortVertices() is for. 
 
 The next problem is the sequence in which the base must be rotated. To generate the second iteration the basis must be rotated 120 degrees clockwise (-2 pi / 3 radians) twice as shown on my notes [here](https://github.com/ConanBacterium/Koch-Snowflake-/blob/master/documentation/notes1.jpg?raw=true). (Remember that the change of basis is applied to make the edge of the previous iteration parallel with the x-axis, the rotations are NOT creating the vertices/angles of the new triangle).
 
