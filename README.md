@@ -1,5 +1,5 @@
 # Koch Snowflake
-The fractal 'Koch Snowflake' drawn with Python and Tkinter, and the coordinates generated using two approaches: my own (flawed) approach, and a recursive (complete) approach stolen online.
+The fractal 'Koch Snowflake' drawn with Python and Tkinter (pencil.py), and the coordinates generated using two approaches: my own flawed approach (customKochSnowflake.py), and a recursive complete approach stolen online (recursiveKochSnowflake.py).
 
 The program is run by executing pencil.py, but by default nothing is drawn on the screen. One of the two out-commented lines in initUI() must be un-commented.. 
 
